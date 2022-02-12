@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <!--D3-->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <title>Heat Map</title>
+</head>
+<body>
+    <h1 id='title'style="padding-top:100px">Monthly Global Land-Surface Temperature</h1>
+    <h4 id='description'style='padding-bottom:20px;color:#727272'>Temperatures from 1753 - 2015 .Average is <text style="color:#ef6900;font-weight: bold;font-size:20px;"> 8.66℃</text></h4>
+    <div id='tooltip'>
+    </div>
+    <!--Canvas-->
+    <svg id='canvas'>
+    </svg>
+    <!--Legend-->
+    <svg id='legend' style=" background-color: white;
+position:absolute; left:220px; top:880px;bottom: 150px;border: 1px black;border-style: solid;height:20px">
+        <g>
+            <!--Darker blue-->
+            <rect x="10" y="0" width="40" height="40" fill="#b5d9ff"></rect>
+            <text x="60" y="20" fill="#727272">Variance of -1 or less</text>
+        </g>
+        <g>
+            <!--Lighter blue-->
+            <rect x="10" y="40" width="40" height="40" fill="#d8ebff"></rect>
+            <text x="60" y="60" fill="#727272">On or Below Average</text>
+        </g>
+        <g>
+            <!--Lighter orange-->
+            <rect x="10" y="80" width="40" height="40" fill="#ffaf01"></rect>
+            <text x="60" y="100" fill="#727272">Above Average</text>
+        </g>
+        <g>
+            <!--Darker orange-->
+            <rect x="10" y="120" width="40" height="40" fill="#ef6900"></rect>
+            <text x="60" y="140" fill="#727272">Variance of +1 or more</text>
+        </g>
+    </svg>
+    <!--Link to Github-->
+    <h4 style="padding-bottom:50px" id="linkToProfile">Developed by <a id='linkP' style="\"href="https://github.com/Preffet" target="_blank">Preffet</a></h4>
+</body>
+<script defer src='script.js'></script>
+<script defer src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+</html>
