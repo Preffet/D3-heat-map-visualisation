@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+*{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+html{
+    min-height: 100%
+}
+
+body {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    min-height: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+svg{
+    background-color: whitesmoke;
+    border-radius: 4px;
+    padding: 10px;
+    color:#727272;
+    height: 670px;
+}
+h1{
+    background-image: linear-gradient(43deg, #ef6900 0%, #ffaf01 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+#linkToProfile {
+    color:#727272;
+    font-style: italic;
+    position:absolute; left:600px; top:1000px;
+}
+
+#linkP:hover {
+    color:  #ff6f3c; 
+    text-decoration: none; 
+}
+
+#linkP {
+    color:  #727272;
+    font-style: italic;
+    text-decoration: none; 
+}
+
+#canvas{
+    min-width: 1200px;
+    min-height: 600px;
+    color:#727272;
+}
+
+g{
+    color: #727272;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.cell:hover{
+    fill: #727272;
+}
+
+#tooltip{
+    visibility: hidden;
+    color: #727272;
+    font-size: 24px;
+    margin-bottom: 5px;
+    height: auto;
+    width: auto;
+    margin-top: 2px;
+}
+
+#legend{
+    color: #727272;
+    font-size: 14px;
+    text-align: center;
+    min-height: 150px;
+}
