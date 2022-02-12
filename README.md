@@ -1,4 +1,5 @@
 This project is a solution to freecodecamp "Data Visualization" course "Heat Map" assignment.
+Link to the completed codePen project: https://codepen.io/preffet/pen/eYeRqjV
 ### Assignment
 ### Visualize Data with a Heat Map
 
